@@ -1,6 +1,9 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    block-size: 80px;
+.header { /* Selector del header, es decir que esto afectara a todo lo que se encuentre dentro del header */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Alineamos elementos al centro */
+    block-size: 80px; /* Tamano del bloque */
+    position: sticky; /* Sticky hace que todo el header nos siga al hacer scroll en el sitio */
+    top: 0; /* El Sticky iniciara desde arriba */
+    backdrop-filter: blur(5px);
 }

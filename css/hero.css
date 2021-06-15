@@ -1,14 +1,15 @@
-img#alfonso {
-    width: 250px;
-    height: 330px;
-}
-
 .hero {
     padding-block-start: 16px;
 }
 
 .hero-img {
     text-align: center;
+}
+
+.hero-img img {
+    inline-size: 330px;
+    block-size: 328px;
+
 }
 
 .hero h1 {
@@ -29,4 +30,30 @@ img#alfonso {
 
 .hero-social {
     padding-block-end: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+        gap: 32px;       
+    }
+    .hero-description {
+        order: 1; /* especifica el orden utilizado para disponer los elementos en su contenedor flexible */
+        max-inline-size: 450px;
+    }
+    .hero-img {
+        order: 2; /* especifica el orden utilizado para disponer los elementos en su contenedor flexible */
+        flex: 1; /* Si quiero que el elemento tome todo el espacio disponible */
+        text-align: end;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hero-img img {
+        inline-size: 504px;
+        block-size: 500px;
+    }
+
 }

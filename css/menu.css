@@ -1,0 +1,27 @@
+.menu { /* Selector de todo lo que haya dentro del menu */ 
+    display: none; /* Mobile First: nativamente, no se muestra el elemento */
+}
+
+.menu ul { /* Selector: tola la lista desordenada (UnorderList) */
+    display: flex; /* Utilizamos esta propiedad para poner los elementos horizontales y no verticales en lista */
+    list-style: none; /* Quitamos los puntos de la lista */
+    gap: 46px; /* Espacio que heredan todos los elementos que identifiquen el selector */
+}
+
+.menu ul a { /* Selector: Todos los enlaces que tiene el menu (Elementos Ancla) */
+    text-decoration: none; /* Remueve la linea tipica del link */
+    color: var(--white); /* Asignamos un color a la fuente */
+    font: var(--button); /* Cambiamos el tipo de fuente */
+    text-transform: uppercase; /* text-transform: nos sirve para cambiar por ejemplo de minusculas a mayusculas */
+
+}
+
+.menu ul a.is-active { /* Selector del elemento del menu que este activo */
+    color: var(--purple); /* Asignamos un color al elemento activo */
+}
+
+@media screen and (min-width: 768px) {
+    .menu { /* Selector de todo lo que haya dentro del menu */ 
+        display: block; /* Se muestra en pantallas iguales o mayores a 768px */
+    }
+}
