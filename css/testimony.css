@@ -1,0 +1,34 @@
+.testimony {
+    /* border: 1px solid red; */
+}
+
+.testimony-title {
+    font: var(--headline5);
+    background-color: var(--purple);
+    align-self: flex-start; /* Para que no abarque toda la linea */
+    color: var(--white);
+    line-height: 47px;
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    margin-inline-start: 4px;
+    box-shadow: -4px 4px 0 #fff;
+    text-decoration: none;
+}
+
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+        .testimony {
+            display: flex;
+            align-items: center;
+        }
+        .testimony:nth-child(odd) .img-testimony { /* nth-child(odd) es un selector para elegir solamente a los elementos pares que tengan esta misma clase 0-2-4 */
+            order: 2;
+        }
+}
