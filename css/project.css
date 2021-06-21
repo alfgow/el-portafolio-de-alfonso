@@ -1,0 +1,37 @@
+.project-content {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+
+.img-project img {
+    max-inline-size: 100%;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+        .project-content {
+            display: flex;
+            align-items: center;
+            padding-block-start: 80px;
+            padding-block-end: 80px;
+        }
+        
+
+        .project-description {
+            flex: 1;
+        }
+
+        .project-content:nth-child(odd) .img-project { /* nth-child(odd) es un selector para elegir solamente a los elementos pares que tengan esta misma clase 0-2-4 */
+            order: 2;
+            flex: 1; /* Hacer que un elemento ocupe el 50% del espacio disponible */
+            text-align: center;
+        }
+}

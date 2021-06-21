@@ -1,0 +1,52 @@
+.form-content {
+    display: flex; /* Organiza todo en la linea */
+    flex-direction: column; /* Dara direccion de columna al display */
+    gap: 16px; /* Espacio entre todos los elmentos */
+}
+
+.formulario {
+    margin-block-end: 80px;
+}
+
+.formulario label{
+    display: flex; /* Organiza todo en la linea */
+    flex-direction: column; /* Dara direccion de columna al display */
+    font: var(--button1);
+  
+}
+
+.formulario input, .formulario textarea {
+    border-radius: 8px;
+    border: 2px solid #858C94;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    font: var(--body1);
+    margin-block-start: 8px;
+}
+
+.formulario p {
+    color: var(--white);
+    font: var(--body1);
+    text-align: center;
+    display: flex;
+    margin-block-start: 16px;
+    margin: 0;
+}
+
+.formulario .title {
+    margin: 0;
+  }
+
+
+@media screen and (min-width: 768px) {
+    .form-content {
+        max-inline-size: 540px;
+        margin: auto;
+    }
+    .formulario .title {
+        align-self: stretch; /* Toma todo el espacio disponible */
+        text-align: center;
+    }
+}

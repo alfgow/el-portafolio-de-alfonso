@@ -11,24 +11,29 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img id="logo" src="./img/logo.png" alt="Logo El Portafolio de Jaume" title="Logo El Portafolio de Jaume">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button">Curriculum</button>
+            </div>
+        </div>
+    </header>
     <div class="wrapper">
-        <header class="header">
-            <img id="logo" src="./img/logo.png" alt="Logo El Portafolio de Jaume" title="Logo El Portafolio de Jaume">
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="is-active" href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Curriculum</button>
-        </header>
+        
         <section aria-label="main" class="hero" id="main">
             <div class="hero-img">
                 <img src="./img/jaume.png" alt="Foto de Jaume" title="Foto de Jaume">
@@ -59,20 +64,20 @@
             </div>
         </section>
 
-        <section aria-label="testimony">
-            <div class="testimony">
-                <div class="img-testimony">
+        <section aria-label="project"></section>
+            <div class="project-content">
+                <div class="img-project">
                     <img src="./img/mac.png" alt="">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
                     <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
                     <a target="_blank" href="#" class="button">Ver proyecto</a>
                     <a target="_blank" href="#" class="button is-secondary">Ver codigo</a>
                 </div>
             </div>
-
-            <section class="comments">
+        </section>
+            <div class="comments">
                 <div class="comments-container">
                     <img class="comments-img" src="./img/leo.png" alt="Foto de Leo" title="Foto de Leo">
                     <p>
@@ -82,20 +87,20 @@
                         LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM
                     </span>
                 </div>
-            </section>
-    
-            <div class="testimony">
-                <div class="img-testimony">
+            </div>
+            <section aria-label="project"></section>
+            <div class="project-content">
+                <div class="img-project">
                     <img src="./img/ipad.png" alt="">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
                     <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
                     <a target="_blank" href="#" class="button">Ver proyecto</a>
                     <a target="_blank" href="#" class="button is-secondary">Ver codigo</a>
                 </div>
             </div>
-
+            </section>
             <section class="comments">
                 <div class="comments-container">
                     <img class="comments-img" src="./img/jason.png" alt="Foto de Leo" title="Foto de Leo">
@@ -107,18 +112,19 @@
                     </span>
                 </div>
             </section>
-    
-            <div class="testimony">
-                <div class="img-testimony">
+            <section aria-label="project"></section>
+            <div class="project-content">
+                <div class="img-project">
                     <img src="./img/iphone.png" alt="">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="https://leonidasesteban.com/">leonidasesteban.com</a>
                     <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
                     <a target="_blank" href="#" class="button">Ver proyecto</a>
                     <a target="_blank" href="#" class="button is-secondary">Ver codigo</a>
                 </div>
             </div>
+            </section>  
 
             <section class="comments">
                 <div class="comments-container">
@@ -132,27 +138,51 @@
                 </div>
             </section>
 
-        </section>
 
+        <div>
+            <form action="" method="GET" class="formulario" id="contact">
+                <div class="form-content">
+                    <h4 class="title">
+                        HABLEMOS
+                    </h4>
+                    <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+                    <label for="form-name">Nombre Completo
+                    <input required name="name" class="form-control" id="form-name" type="text" placeholder="Juan">
+                    </label>
+                    <label for="form-email">Correo Electrónico
+                    <input name="email" id="form-email" required type="email" placeholder="juan@juan.com">
+                    </label>
+                    <label for="form-message">Mensaje
+                    <textarea required name="message" id="form-message" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                    </label>
+                    <button class="button" type="submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
        
         
       <footer class="footer">
-        <img id="logo" src="./img/logo.png" alt="Logo El Portafolio de Jaume" title="Logo El Portafolio de Jaume">
 
-        <div class="social">
-            <a class="button-icon" href="tel:654654654"><img src="./icons/icon-phone.svg" alt="icono de telefono" title="icono de telefono"></a>
-            <a class="button-icon" href="#"><img src="./icons/icon-important_mail.svg" alt="icono de mail" title="icono de mail"></a>
-            <a class="button-icon" href="#"><img src="./icons/icon-instagram.svg" alt="icono de instagram" title="icono de instagram"></a>
-            <a class="button-icon" href="#"><img src="./icons/icon-twitter_squared.svg" alt="icono de twitter" title="icono de twitter"></a>
-        </div>
         <div class="footer-content">
-            <p> 
-                <!-- Sacar emojis tecla de win + . -->
-                Hecho con el ❤ de Jaume.&nbsp;
-            </p>
-            <p>
-                Copyright 2021 - Todos los derechos reservados.
-            </p>
+            <img id="logo" src="./img/logo.png" alt="Logo El Portafolio de Jaume" title="Logo El Portafolio de Jaume">
+    
+            <div class="social">
+                <a class="button-icon" href="tel:654654654"><img src="./icons/icon-phone.svg" alt="icono de telefono" title="icono de telefono"></a>
+                <a class="button-icon" href="#"><img src="./icons/icon-important_mail.svg" alt="icono de mail" title="icono de mail"></a>
+                <a class="button-icon" href="#"><img src="./icons/icon-instagram.svg" alt="icono de instagram" title="icono de instagram"></a>
+                <a class="button-icon" href="#"><img src="./icons/icon-twitter_squared.svg" alt="icono de twitter" title="icono de twitter"></a>
+            </div>
+    
+    
+            <div class="footer-content">
+                <p> 
+                    <!-- Sacar emojis tecla de win + . -->
+                    Hecho con el ❤ de Jaume.&nbsp;
+                </p>
+                <p>
+                    Copyright 2021 - Todos los derechos reservados.
+                </p>
+            </div>
         </div>
       </footer>
 
