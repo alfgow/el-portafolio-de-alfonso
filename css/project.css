@@ -22,14 +22,13 @@
             align-items: center;
             padding-block-start: 80px;
             padding-block-end: 80px;
-        }
-        
+        }        
 
         .project-description {
             flex: 1;
         }
 
-        .project-content:nth-child(odd) .img-project { /* nth-child(odd) es un selector para elegir solamente a los elementos pares que tengan esta misma clase 0-2-4 */
+        .project-content:nth-child(even) .img-project { /* nth-child(odd) es un selector para elegir solamente a los elementos pares que tengan esta misma clase 0-2-4 */
             order: 2;
             flex: 1; /* Hacer que un elemento ocupe el 50% del espacio disponible */
             text-align: center;
