@@ -1,5 +1,6 @@
 .testimony {
-    /* border: 1px solid red; */
+    padding-block-start: 40px;
+    padding-block-end: 40px;
 }
 
 .testimony-title {
@@ -12,9 +13,12 @@
     padding-block-end: 4px;
     padding-inline-start: 8px;
     padding-inline-end: 8px;
-    margin-inline-start: 4px;
     box-shadow: -4px 4px 0 #fff;
     text-decoration: none;
+}
+
+.img-testimony img {
+    max-inline-size: 100%;
 }
 
 .testimony-description {
@@ -23,12 +27,24 @@
     gap: 16px;
 }
 
+
+
 @media screen and (min-width: 768px) {
         .testimony {
             display: flex;
             align-items: center;
+            padding-block-start: 80px;
+            padding-block-end: 80px;
         }
+        
+
+        .testimony-description {
+            flex: 1;
+        }
+
         .testimony:nth-child(odd) .img-testimony { /* nth-child(odd) es un selector para elegir solamente a los elementos pares que tengan esta misma clase 0-2-4 */
             order: 2;
+            flex: 1; /* Hacer que un elemento ocupe el 50% del espacio disponible */
+            text-align: center;
         }
 }

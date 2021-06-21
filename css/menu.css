@@ -23,5 +23,7 @@
 @media screen and (min-width: 768px) {
     .menu { /* Selector de todo lo que haya dentro del menu */ 
         display: block; /* Se muestra en pantallas iguales o mayores a 768px */
+        backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
     }
 }

@@ -9,7 +9,8 @@
 .hero-img img {
     inline-size: 330px;
     block-size: 328px;
-
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 .hero h1 {
