@@ -10,5 +10,5 @@
     justify-content: space-between; 
     align-items: center; /* Alineamos elementos al centro */
     block-size: 80px; /* Tamano del bloque */
-   
+   font: var(--button1);
 }

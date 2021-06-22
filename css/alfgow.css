@@ -37,6 +37,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img#logo {
     width: 70px;
     height: 20px;
